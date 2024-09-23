@@ -4,6 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        
+        {
+            "name": "assignment2.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "assignment2.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--url", 
+                "https://s3.amazonaws.com/cuny-is211-spring2015/birthdays100.csv"
+            ]
+        },
         {
             "name": "Run assignment3.py",
             "type": "debugpy",
@@ -11,8 +24,16 @@
             "program": "assignment3.py",
             "console": "integratedTerminal",
             "args": [
-                "--url", "http://s3.amazonaws.com/cuny-is211-spring2015/weblog.csv"
+                "--url", 
+                "http://s3.amazonaws.com/cuny-is211-spring2015/weblog.csv"
             ]
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
